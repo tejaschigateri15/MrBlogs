@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  bottom: 0; /* Changed from 'top: 50%' */
+  left: 0;
+  width: 200px; /* Added to match image width */
+  text-align: center; /* Added to center the text */
+  background-color: rgba(0, 0, 0, 0.7);
+
+}
+
+.container:hover .image {
+  opacity:1;
+  
+}
+.image:hover{
+    width: 220px;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 16px;
+  padding: 16px 0; /* Adjusted padding for top and bottom */
+}
+.h1 {
+padding: 2px;
+margin: 5px;
+}
+.h2 {
+padding: 2px;
+margin: 5px;
+}
+.h3 {
+padding: 2px;
+margin: 5px;
+}
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <img src="./IMG20230403163226.jpg" alt="Avatar" class="image" style="width:200px">
+        <div class="middle">
+          <div class="text">
+           <a href="mailto:tejaschigateri15@gmail.com"> <img src="./imag/Gmail_Logo_512px.png" alt="" class="h1" width="15px"></a>
+           <a href="https://twitter.com/Tejas06902065">   <img src="./imag/twitter.png" alt="" class="h2" width="15px"></a>
+           <a href="https://github.com/tejaschigateri15">  <img src="./imag/icons8-github-48.png" alt="" class="h3" width="15px"></a>
+          </div>
+        </div>
+      </div>
+
+</body>
+</html>

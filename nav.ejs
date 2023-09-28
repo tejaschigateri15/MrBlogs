@@ -1,0 +1,51 @@
+<style>
+ @import url('https://fonts.googleapis.com/css2?family=Handjet:wght@700&display=swap');
+ 
+  .navbar-brand{
+    font-family: 'Handjet', cursive;
+    font-size: 35px;
+    cursor: pointer;
+  }
+  .nav-item{
+    transition: border-bottom-color 0.3s ease-in-out;
+    border-bottom: 2px solid transparent;
+  }
+  .nav-item:hover{
+    border-bottom-color: #F31559;
+    color: rgb(18, 19, 19);
+  }
+  .px{
+    position: fixed; /* Set the navbar to fixed position    rgb(227, 22, 22)*/
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  overflow: visible;
+  }
+
+
+</style>
+
+<div class="px">
+<nav class="navbar navbar-expand-lg navbar-light bg-light p-3">
+    <a class="navbar-brand" href="/">Mr. Blogs</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" 
+    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse-navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item ">
+          <a class="nav-link" href="/">Home </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+        
+        <li class="nav-item">
+            <a class="nav-link disabled" href="/createblog">Create-Blog</a>
+        </li>
+      </ul>
+      
+    </div>
+  </nav>
+</div>

@@ -1,0 +1,138 @@
+.start{
+    background-repeat: no-repeat;
+    background-image: url('./imag/jpeg-optimizer_bharath-g-s-aLGiPJ4XRO4-unsplash.jpeg');
+    background-size: 100% 100%;
+}
+
+
+.main{
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+.top{
+    margin:20px 0;
+    padding: 5px;
+}
+.cont1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-top: 50px;
+    background-color: rgb(221, 220, 230);
+     padding: 20px;
+    
+     max-width: 1200px; /* Adjust the maximum width as needed    color: ghostwhite*/
+     margin: 0 auto; /* Center the box horizontally */
+     border-radius: 20px;
+     margin-bottom: 10px;
+     box-shadow: 0 4px 12px rgba(142, 142, 140, 0.781);
+     
+  }
+
+  .cont1:hover{-webkit-animation:cont1 .4s cubic-bezier(.25,.46,.45,.94) both;animation:cont1 .4s cubic-bezier(.25,.46,.45,.94) both}
+  @-webkit-keyframes cont1{0%{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-box-shadow:0 0 0 0 transparent;box-shadow:0 0 0 0 transparent}100%{-webkit-transform:translateZ(50px);transform:translateZ(50px);-webkit-box-shadow:0 0 20px 0 rgba(247, 37, 37, 0.35);box-shadow:0 0 20px 0 rgba(233, 16, 16, 0.35)}}@keyframes cont1{0%{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-box-shadow:0 0 0 0 transparent;box-shadow:0 0 0 0 transparent}100%{-webkit-transform:translateZ(50px);transform:translateZ(50px);-webkit-box-shadow:0 0 20px 0 rgba(250, 34, 34, 0.35);box-shadow:0 0 20px 0 rgba(4, 26, 168, 0.35)}}
+.img1 {
+    opacity: 1;
+    display: block;
+    width: 300px;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .logo {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;                           /* on img hover img size should grow more with box shadow effect*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%); 
+    visibility : hidden;
+  }
+  
+  .cont1:hover .img1 {
+    opacity: 1;
+  }
+  
+  .cont1:hover .logo {
+    opacity: 1;
+    visibility: hidden;
+  }
+
+  .sep{
+    margin: 40px 0;
+    border: none;
+  }
+
+  .contt{
+    padding-bottom: 70px;
+    
+  }
+
+ /* .tracking-in-contract:hover{-webkit-animation:tracking-in-contract .8s cubic-bezier(.215,.61,.355,1.000) both;animation:tracking-in-contract .8s cubic-bezier(.215,.61,.355,1.000) both}
+
+@-webkit-keyframes tracking-in-contract{0%{letter-spacing:1em;opacity:0}40%{opacity:.6}100%{letter-spacing:normal;opacity:1}}@keyframes tracking-in-contract{0%{letter-spacing:1em;opacity:0}40%{opacity:.6}100%{letter-spacing:normal;opacity:1}}*/
+
+.support{
+  position: relative;
+  padding-bottom: 70px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.icons{
+  padding-top: 10px;
+  display: flex;
+  align-items: flex-end;
+  justify-content:center;
+  gap: 20px;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  bottom: 0; /* Changed from 'top: 50%' */
+  left: 0;
+  width: 200px; /* Added to match image width */
+  text-align: center; /* Added to center the text */
+  background-color: rgba(0, 0, 0, 0.7);
+
+}
+
+.container:hover .image {
+  opacity:1;
+  
+}
+.image:hover{
+    width: 220px;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 16px;
+  padding: 16px 0; /* Adjusted padding for top and bottom */
+}
+.h1 {
+padding: 2px;
+margin: 5px;
+}
+.h2 {
+padding: 2px;
+margin: 5px;
+}
+.h3 {
+padding: 2px;
+margin: 5px;
+}
+a:link {
+  color: black;
+}

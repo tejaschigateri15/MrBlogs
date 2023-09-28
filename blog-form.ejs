@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Create Blog</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .container {
+      margin: 150px auto;
+      text-align: left;
+      background-color: #e0e6eb;
+      border-radius: 35px;
+    }
+    
+    .blog-form {
+      width: 700px;
+      margin: 0 auto;
+      
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #939B62;
+      border-radius: 5px;
+    }
+
+    button {
+      transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), background-color 0.2s ease;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #3498db;
+      color: white;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #2980b9;
+    }
+
+    button:active {
+      transform: scale(0.95);
+      background-color: #1f618d;
+    }
+    h2{
+      padding-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form class="blog-form" action="/blogs" method="POST">
+      <h2>Create a Blog</h2><br>
+      <div class="form-group">
+        <label for="blogTitle">Blog Title:</label>
+        <input type="text" id="blogTitle" class="form-control" placeholder="Enter blog title" name="title" required>
+      </div>
+      <div class="form-group">
+        <label for="blogSnippet">Blog Snippet:</label>
+        <input type="text" id="blogSnippet" class="form-control" placeholder="Enter blog snippet" name="snippet" required>
+      </div>
+      <div class="form-group">
+        <label for="typeofblog">Type of Blog:</label>
+        <select id="typeofblog" class="form-control" name="typeofblog" required>
+          <option value="Travel">Travel</option>
+          <option value="Sports">Sports</option>
+          <option value="Technology">Technology</option>
+          <option value="Movies">Movies</option>
+          <option value="Buisness">Business</option>
+          <option value="Others" selected>Others</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="blogBody">Blog Body:</label>
+        <textarea id="blogBody" class="form-control" rows="8" placeholder="Write your blog here" name="body"></textarea>
+      </div>
+      <div class="by">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
